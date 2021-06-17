@@ -1,6 +1,8 @@
+
 #include <stdio.h>
 /**
- *prints exactly the statement, followed by a new line
+ * main - prints exactly the statement, followed by a new line
+ * Return: 0 if exited properly, non-zero otherwise
  */
 int main(void)
 {
