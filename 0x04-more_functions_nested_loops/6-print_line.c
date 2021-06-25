@@ -3,6 +3,7 @@
 /**
  * print line - print lines
  * @n: first parameter
+ * 
  * Description: '_' is input dependent
  * Return: Returns nothing since function is void
  */
@@ -18,4 +19,3 @@ _putchar('_');
 _putchar('\n');
 }
 }
-  
