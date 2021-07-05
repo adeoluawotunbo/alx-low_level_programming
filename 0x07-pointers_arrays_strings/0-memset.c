@@ -6,20 +6,21 @@
  * @b: The constant byte
  * @n: size in bytes of buffer to be filled
  *
- * Description: This function fills memory area with a constant byte
+ * Description: This function fills memory area
+ * with a constant byte
  *
  * Return: A pointer to memory area s.
  */
 
 char *_memset(char *s, char b, unsigned int n)
 {
-  unsigned int i;
+unsigned int i;
 
-  i = 0;
-  while (i < n)
-    {
-      s[i] = b;
-      i++;
-    }
-  return (s);
+i = 0;
+while (i < n)
+{
+s[i] = b;
+i++;
+}
+return (s);
 }
