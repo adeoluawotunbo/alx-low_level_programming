@@ -6,8 +6,8 @@
  *@b - this fills the memoey area
  *@n - this is number of bytes that will be filled in the
  *memory area pointed to @s
+ * Return : the pointer s is to be returned
  */
-
 
 char *_memset(char *s, char b, unsigned int n)
   
