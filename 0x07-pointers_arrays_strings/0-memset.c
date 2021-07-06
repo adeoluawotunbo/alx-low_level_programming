@@ -1,7 +1,8 @@
 #include "holberton.h"
 
 /**
- * _memset.c - this is the main function
+ * *_memset.c - this is the main function
+ * 
  *@s - this is the pointer to the area to be filled
  *@b - this fills the memoey area
  *@n - this is number of bytes that will be filled
