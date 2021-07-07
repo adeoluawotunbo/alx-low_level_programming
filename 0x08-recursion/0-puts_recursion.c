@@ -2,7 +2,7 @@
 
 /**
  *  _puts_recursion - the main function
- * @ s - the string to be written out
+ * @s: the string to be written out
  *
  * Description: the function that prints the string s and a trailing
  * newline to stdout recursively
