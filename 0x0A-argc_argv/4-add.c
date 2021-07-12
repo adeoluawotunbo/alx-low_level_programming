@@ -14,9 +14,9 @@ if (argc = 0)
 printf("%d\n", 0);
 }
 
-if (!isdigit = argv[i])
+if (!isdigit(argv[i]))
 {
-printf("s\n", Error);
+printf("%s\n", "Error");
 return (1);
 }
 
