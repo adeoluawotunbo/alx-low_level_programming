@@ -20,7 +20,7 @@ int sum;
 
 if (argc == 1)
 {
-printf("%d\n", zero);
+printf("%d\n", 0);
 return (0);
 }
 
@@ -33,7 +33,7 @@ if (atoi(argv[i]) == 0)
 printf("%s\n", "Error");
 return (1);
 }
-sum += atoi(*(argv + x));
+sum += atoi(*(argv + i));
 }
 }
 
