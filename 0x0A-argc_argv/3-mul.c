@@ -14,8 +14,7 @@
 
 int main(int argc, char *argv[])
 {
-int i;
-int num1, num2, mul;
+
 char error [9] = "Error";
 
 if (argc != 3)
@@ -24,14 +23,7 @@ printf("%s\n", error);
 return (1);
 }
 
-while (i < argc)
-{
-num1 = atoi(*(argv +1));
-num2 = atoi(argv[2]);
-i++;
-}
-mul = num1 * num2;
-printf("%d\n", mul);
+printf("%d\n",(atoi(argv[1]) * atoi(argv[2]));
 
 return (0);
 }
