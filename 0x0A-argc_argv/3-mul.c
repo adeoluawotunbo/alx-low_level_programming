@@ -13,11 +13,12 @@ int main(int argc, char *argv[])
 {
 int mul;
 int i;
-int argv[i] = a;
-int argv[i+1] = b;
+argv[i] = int a;
+argv[i+1] = int b;
 
-for (i = 1; i < argc)
-for (mul = a * b)
+i = 1; 
+i < argc;
+mul = a * b;
 {
 printf("%d\n", (mul));
 }
