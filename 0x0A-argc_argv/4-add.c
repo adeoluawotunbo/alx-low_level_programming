@@ -1,40 +1,42 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+
 /**
- * main - prints sum of two numbers
- * ption: prints sum of two numbers
- * Return: Always(0) Success
+ * main - prints sum of any numbers upto infinity
+ * @argc: arguement count
+ * @argv: arguement arrays
+ * 
+ * Description: prints sum of any numbers up
+ * to infinity
+ * Return: return 1 for error otherwise 0
  */
+
 int main(int argc, char *argv[])
+
 {
-	int x;
-	int sum;
-	int zero = 0;
-	char error[10] = "Error";
+int i;
+int sum;
 
+if (argc == 1)
+{
+printf("%d\n", zero);
+return (0);
+}
 
-	if (argc == 1)
-	{
-		printf("%d\n", zero);
-		return (0);
-	}
+for (i = 0; i < argc; i++)
+{
+if (i > 0)
+{
+if (atoi(argv[i]) == 0)
+{
+printf("%s\n", "Error");
+return (1);
+}
+sum += atoi(*(argv + x));
+}
+}
 
-	for (x = 0; x < argc; x++)
-	{
-		if (x > 0)
-		{
-			if (atoi(argv[x]) == 0)
-			{
-				printf("%s\n", error);
-				return (1);
-			}
-
-			sum += atoi(*(argv + x));
-		}
-	}
-
-	printf("%d\n", sum);
-
-	return (0);
+printf("%d\n", sum);
+return (0);
 }
