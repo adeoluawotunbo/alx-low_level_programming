@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
  * main - the main function
  * @argc: arguement count
@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 {
 int i;
 int num1, num2, mul;
-char error = "Error";
+char error [9] = "Error";
 
 if (argc != 3)
 {
@@ -26,7 +26,7 @@ return (1);
 
 while (i < argc)
 {
-num1 = atoi(argv[1]);
+num1 = atoi(*(argv +1));
 num2 = atoi(argv[2]);
 i++;
 }
