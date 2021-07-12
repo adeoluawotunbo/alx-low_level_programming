@@ -16,8 +16,7 @@ int i;
 
 for (i = 0; i < argc; i++)
 {
-printf("%s\n", argv[i-1]);
-i++;
+printf("%s\n", argv[i]);
 }
 return (0);
 }
