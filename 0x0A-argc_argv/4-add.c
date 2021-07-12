@@ -1,31 +1,40 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 /**
- *
+ * main - prints sum of two numbers
+ * ption: prints sum of two numbers
+ * Return: Always(0) Success
  */
-
 int main(int argc, char *argv[])
-
 {
-int i, sum = 0;
- 
+	int x;
+	int sum;
+	int zero = 0;
+	char error[10] = "Error";
 
-if (argc == 1)
-{
-printf("%d\n", 0);
-}
 
-for (i = 1; i < argc; i++);
+	if (argc == 1)
+	{
+		printf("%d\n", zero);
+		return (0);
+	}
 
-if (atoi(argv[i]) == 0)
-{
-printf("%s\n", "Error");
-return (1);
-}
+	for (x = 0; x < argc; x++)
+	{
+		if (x > 0)
+		{
+			if (atoi(argv[x]) == 0)
+			{
+				printf("%s\n", error);
+				return (1);
+			}
 
-sum += atoi(argv[i]);
-{
-printf("%d\n", sum);
-return (0);
-}
+			sum += atoi(*(argv + x));
+		}
+	}
+
+	printf("%d\n", sum);
+
+	return (0);
 }
