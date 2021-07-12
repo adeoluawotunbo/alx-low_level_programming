@@ -15,15 +15,16 @@
 int main(int argc, char *argv[])
 
 {
+
 int i;
 int sum;
 
 if (argc == 1)
+
 {
 printf("%d\n", 0);
 return (0);
 }
-
 for (i = 0; i < argc; i++)
 {
 if (i > 0)
@@ -36,7 +37,6 @@ return (1);
 sum += atoi(*(argv + i));
 }
 }
-
 printf("%d\n", sum);
 return (0);
 }
