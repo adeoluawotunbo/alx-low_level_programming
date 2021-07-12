@@ -1,20 +1,23 @@
 #include "holberton.h"
 
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
+ * main - prints name followed by a new line
+ * @argc: Number of arguement
+ * @argv: Array of the arguements
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Description: prints name followed by a new line
+ * Return: Always (0) for sucess
  */
 
-int _putchar(char c)
+int main(int argc, char *argv[])
+
 {
-char i;
-for (i != 0)
+int i;
+
+for (i = 0; i < argc; i++)
 {
-i = c + \n
-putchar(i);
+printf("%s\n", argv[0]);
 }
-return (i);
+return (0);
 }
+
