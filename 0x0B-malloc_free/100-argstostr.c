@@ -4,7 +4,7 @@
  * argstostr - concatenates all the arguments of your program
  * @ac: argument count
  * @av: argument vector
- * 
+ *
  * Description: a function that concatenates all the
  * arguments of your program.
  * Return: a pointer to a new string, or NULL if it fails
@@ -21,7 +21,7 @@ return (NULL);
 
 for (i = 0; i < ac; i++)
 {
-j= 0;
+j = 0;
 
 while (av[i][j] != '\0')
 {
