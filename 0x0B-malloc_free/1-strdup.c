@@ -5,7 +5,7 @@
  * _strdup - Returns a pointer to a new string which is
  * a duplicate of the string str
  * @str: string to be duplicated
- * 
+ *
  * Description: a function that returns a pointer to a
  * newly allocated space in memory, which contains a
  * copy of the string given as a parameter.
