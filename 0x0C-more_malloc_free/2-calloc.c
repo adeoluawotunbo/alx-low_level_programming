@@ -26,7 +26,7 @@ return (NULL);
 
 for (x = 0; x < (nmemb * size); x++)
 {
-index[x] = 0;
+*(index + x) = 0;
 }
 return (index);
 }
