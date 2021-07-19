@@ -8,7 +8,7 @@
  *
  * Description: duplicates
  * Return: Always(0) Success
-*/
+ */
 
 char *_strdup(char *str)
 
@@ -28,6 +28,7 @@ if (str == NULL)
 return (NULL);
 
 new_string = space;
+
 while (*str)
 
 {
@@ -51,6 +52,7 @@ return (space);
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
+
 {
 dog_t *newdog;
 char *nameCopy;
