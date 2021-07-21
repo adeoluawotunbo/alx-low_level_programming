@@ -1,0 +1,52 @@
+#include "3-calc.h"
+#include <stdlib.h>
+
+/**
+ * get_op_fun - the main function
+ * @s: The operator passed as argument to the program
+ *
+ * Description: a function that selects the correct function
+ * to perform
+ * Return:  returns a pointer to the function that
+ * corresponds to the operator given as a parameter.
+ */
+
+{
+	op_t ops[] = {
+		{"+", op_add},
+		{"-", op_sub},
+		{"*", op_mul},
+		{"/", op_div},
+		{"%", op_mod},
+		{NULL, NULL}
+	};
+	int i = 0;
+
+	while (ops[i].op != NULL && *(ops[i].op) != *s)
+		i++;
+	return (ops[i].f);
+}
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+3-get_op_func.c [unix] (00:59 01/01/1970)                                0,1 All
+-- INSERT --
+
