@@ -28,6 +28,7 @@ while (ops[i].op != NULL && *(ops[i].op) != *s)
 i++;
 return (ops[i].f);
 }
+<<<<<<< HEAD
 ~
 ~
 ~
@@ -50,4 +51,6 @@ return (ops[i].f);
 ~
 3-get_op_func.c [unix] (00:59 01/01/1970)                                0,1 All
 -- INSERT --
+=======
+>>>>>>> a38769c8afaf60e0ee1ed9034a7603cce029406b
 
