@@ -19,7 +19,8 @@ const list_t *temp = h;
 while (temp != NULL)
 
 {
-printf("[%d] %s\n", temp->len, temp->str != NULL ? temp->str : "(nil)");
+printf("[%d] %s\n", temp->len,
+temp->str != NULL ? temp->str : "(nil)");
 temp = temp->next;
 number_of_Node++;
 }
