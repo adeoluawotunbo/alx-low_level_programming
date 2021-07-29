@@ -1,12 +1,12 @@
 #include <stdio.h>
 
+void print_something(void) __attribute__ ((constructor));
+
 /**
- * main - check the code for ALX School students.
- *
- * Return: Always 0.
+ *print_something - prints a msg before the main
  */
-int main(void)
+
+void print_something(void)
 {
-printf("(A tortoise, having pretty good sense of a hare's nature, challenges one to a race.)\n");
-return (0);
+printf("You're beat! and yet, you must allow,\nI bore my house upon my back!\n")
 }
