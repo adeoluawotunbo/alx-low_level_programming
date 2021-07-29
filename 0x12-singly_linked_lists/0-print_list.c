@@ -1,5 +1,5 @@
 #include "lists.h"
-
+#include <stdio.h>
 
 /**
  * size_t print_list - the main function.
@@ -18,15 +18,10 @@ const list_t *temp = h;
 
 while (temp != NULL)
 
-if (temp->str == NULL)
 {
-printf("[0] (nil)\n");	
-}
-else
-{
-printf("[%d] %s\n", temp->len, temp->str);
+printf("[%d] %s\n", temp->len, temp->str != NULL ? temp->str : "(nil)");
 temp = temp->next;
-number_Of_Node++;
+number_of_Node++;
 }
 return (number_Of_Node);
 }
