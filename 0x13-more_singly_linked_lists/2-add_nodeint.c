@@ -4,12 +4,12 @@
 /**
  * add_nodeint - Adds a new node at the beginning of a listint_t list.
  *
- * @head: header pointer
- * @n: new node to be added
+ * @head: header pointer.
+ * @n: new node to be added.
  *
  * Description: a function that adds a new node at the beginning of
  * a listint_t list.
- * Return: address of the new element. 
+ * Return: address of the new element.
  */
 
 listint_t *add_nodeint(listint_t **head, const int n)
