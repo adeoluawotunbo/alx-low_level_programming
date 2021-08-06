@@ -1,56 +1,27 @@
-#include <stdlib.h>
-#include <stdio.h>
-#include "main.h"
-
-#define BIT_SIZE 8
+#include "holberton.h"
 
 /**
- * powX - powers a number b to the p's power
+ * print_binary - a function that prints the binary representation of a number.
  *
- * @b : base
- * @p : power
+ * @n: the number to print.
  *
- * Return: return b to the power of a
- */
-unsigned long int powX(int b, int p)
-{
-unsigned long int ans = 1;
-
-while (p)
-{
-ans *= b;
-p--;
-}
-return (ans);
-}
-
-/**
- * print_binary - prints the binary representation of a number
- *
- * @n: input integer.
+ * Return: void
  */
 
 void print_binary(unsigned long int n)
 {
-	unsigned long int test = powX(2, sizeof(unsigned long int) * BIT_SIZE - 1);
-int start = 0;
+int bit = sizeof(n) * 8, printed = 0;
 
-if (n == 0)
+while (bit)
 {
-_putchar('0');
-return;
-}
-while (test)
-{
-if (!(test & n) && start)
-{
-_putchar('0');
-}
-else if (test & n)
+if (n & 1L << --bit)
 {
 _putchar('1');
-start = 1;
+printed++;
 }
-test = test >>
+else if (printed)
+_putchar('0');
 }
+if (!printed)
+_putchar('0');
 }
