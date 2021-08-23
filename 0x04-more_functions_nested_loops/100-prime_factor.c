@@ -15,7 +15,7 @@ int main(void)
 
 	for (c = (int) sqrt(n); c > 2; c++)
 	{
-		if (num % c == 0)
+		if (n % c == 0)
 		{
 			printf("%d\n", c);
 			break;
