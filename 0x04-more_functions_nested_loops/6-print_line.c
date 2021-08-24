@@ -1,21 +1,22 @@
 #include "holberton.h"
 
 /**
- * print line - print lines
+ * print_line - a function that draws a straight line in the terminal.
+ *
  * @n: first parameter
- * 
- * Description: '_' is input dependent
- * Return: Returns nothing since function is void
+ *
+ * Return: Return (1) on success.
  */
 
 void print_line(int n)
 {
-int iteration;
-{
-for (iteration = 1; iteration <= n; iteration++)
+int count;
+
+count = 0;
+while (count < n)
 {
 _putchar('_');
+count++;
 }
 _putchar('\n');
-}
 }
