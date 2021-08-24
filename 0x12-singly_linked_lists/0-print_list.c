@@ -3,12 +3,13 @@
 #include <stdlib.h>
 
 /**
- * size_t print_list - the main function.
- * @list_t: the list whose element is to be printed
+ * print_list - the main function.
+ *
  * @h: a pointer to the list.
  *
  * Description: A function that prints all the elements of a list_t list.
- * return: the number of nodes is to be returned
+ *
+ * Return: the number of nodes.
  */
 
 size_t print_list(const list_t *h)
