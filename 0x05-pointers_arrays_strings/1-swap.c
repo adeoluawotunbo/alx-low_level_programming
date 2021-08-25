@@ -2,10 +2,10 @@
 
 /**
  * swap_int - swaps the values of two integers.
- * 
+ *
  * @a: First pointer
  * @b: the second pointer
- *   
+ *
  * Return: return nothing, a void function
  */
 
@@ -15,4 +15,5 @@ int temp;
 
 temp = *a;
 *a = *b;
-*b = temp;}
+*b = temp;
+}
