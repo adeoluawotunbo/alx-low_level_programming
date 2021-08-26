@@ -8,7 +8,6 @@
  *
  * @str: pointer to the string inputed.
  */
-
 void puts_half(char *str)
 {
 	int i = 0;
